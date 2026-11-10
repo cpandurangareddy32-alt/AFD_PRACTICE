@@ -1,0 +1,75 @@
+{
+	"name": "Acadamy_of_data_target_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_postgresql_tpch",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Acadamy_of_data"
+		},
+		"annotations": [],
+		"type": "AzurePostgreSqlTable",
+		"schema": [
+			{
+				"name": "o_orderkey",
+				"type": "bigint",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "o_custkey",
+				"type": "bigint",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "o_orderstatus",
+				"type": "character",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "o_totalprice",
+				"type": "numeric",
+				"precision": 15,
+				"scale": 2
+			},
+			{
+				"name": "o_orderdate",
+				"type": "date",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "o_orderpriority",
+				"type": "character varying",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "o_clerk",
+				"type": "character varying",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "o_shippriority",
+				"type": "integer",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "o_comment",
+				"type": "text",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "tpch",
+			"table": "customer"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
